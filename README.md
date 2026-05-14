@@ -18,7 +18,7 @@ some print a line of text. some might do more eventually. they're written to be 
 
 ### `lifeos-util`
 
-quiet messages for quiet moments.
+quiet little messages for quiet little moments.
 
 ```
 lifeos-util [--flag]
@@ -26,8 +26,8 @@ lifeos-util [--flag]
 
 | flag | description |
 |---|---|
-| `--time-whisper` | a few words tuned to the current hour |
-| `--system-ambient` | a line as if the machine itself is speaking |
+| `--time-whisper` | a soft, time-aware mood message — a few quiet words based on the hour |
+| `--system-ambient` | a gentle message as if the system itself is speaking |
 
 **examples**
 
@@ -43,16 +43,16 @@ the kernel is unbothered — it usually is
 
 ## building
 
-requires Go.
+requires Go. you can build and install using the provided makefile.
 
 ```sh
-go build -o lifeos-util ./main.go
+make build
 ```
 
-move it somewhere on your path if you want it always available:
+to install it to `~/.local/bin/`:
 
 ```sh
-mv lifeos-util ~/.local/bin/
+make install
 ```
 
 ---
